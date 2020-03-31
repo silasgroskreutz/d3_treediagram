@@ -14,9 +14,50 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Gamer Corporation</title>
+    <title>Koopa Korporation</title>
   </head>
   <body>
+    <div class="green section">
+      <h2 class="white-text center">Koopa Korp</h2>
+    </div>
+
+    <div class="grey lighten-3 section grey-text" style="position: relative">
+      <p class="flow-text center">
+        "Bow down before Bowser, King of the Koopas, and get out of my way!"
+      </p>
+      <a
+        href="#modal"
+        class="btn-floating btn-large halfway-fab green modal-trigger"
+        ><i class="material-icons">add</i></a
+      >
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h4 class="green-text center">
+          Add New Employee
+          <form>
+            <div class="input-field">
+              <input type="text" id="name" placeholder="Employee Name" />
+            </div>
+            <div class="input-field">
+              <input type="text" id="parent" placeholder="Reports to..." />
+            </div>
+            <div class="input-field">
+              <input type="text" id="department" placeholder="Department" />
+            </div>
+            <div class="input-field">
+              <button class="btn green white-text">Add employee</button>
+            </div>
+          </form>
+        </h4>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="canvas"></div>
+    </div>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
